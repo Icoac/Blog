@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Blog</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>11ºF English Blog</h1>
+        <p>A journey through literature and learning</p>
+    </header>
+    
+    <nav>
+        <a href="#" onclick="showPage('home')"><i class="fas fa-home"></i> Home</a>
+        <a href="#" onclick="showPage('about')"><i class="fas fa-user"></i> About</a>
+        <a href="#" onclick="showPage('contact')"><i class="fas fa-envelope"></i> Contact</a>
+    </nav>
+    
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home" class="page">
+            
+            <article class="blog-post">
+                <h2>Welcome to 11ºF English Blog</h2>
+                <p class="date"><i class="far fa-calendar-alt"></i> October 11, 2024</p>
+                <p>Welcome to 11ºF English class blog! Here, we can share our essays made in school.</p>
+            </article>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page" style="display: none;">
+            <div class="blog-post">
+                <div class="profile-section">
+                    <div>
+                        <h2>About Me</h2>
+                        <p>Hi, I'm Frederico Carneiro! I started this blog as a fun project for my English class, it's a place where we can share our thoughts and essays. In my free time, I love learning how to code and exploring cool things I can create with technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ <!-- Contact Page -->
+        <div id="contact" class="page" style="display: none;">
+            <div class="blog-post">
+                <h2>Get in Touch</h2>
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="1adb9716-e5dd-433b-b3e7-7189c51aecda">
+                    <input type="text" placeholder="Your Name" name="name" required>
+                    <input type="email" placeholder="Your Email" name="email" required>
+                    <textarea placeholder="Your Message" rows="5" name="message" required></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 English 11 Blog | Created with <i class="fas fa-heart" style="color: #e74c3c;"></i></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
